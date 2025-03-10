@@ -2,7 +2,7 @@ package webapp.spring.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;  // Изменение здесь
+import org.springframework.ui.Model; 
 import org.springframework.web.bind.annotation.*;
 import webapp.spring.model.User;
 import webapp.spring.service.UserService;
@@ -12,10 +12,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/")
 public class UserController {
-    //Spring (через ApplicationContext, который использует BeanFactory) видит @Controller.
-    //Вызывает конструктор UserController().
-    //Внедряет UserService через @Autowired.
-    //Вызывает new UserController() и внедряет UserService через @Autowired для создания бина с помощью бин-фактори
+   
 
 
 
