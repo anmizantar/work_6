@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Добавить пользователя</title>
+</head>
+<body>
+<h1>Добавить пользователя</h1>
+<form th:action="@{/webapp/add}" th:object="${user}" method="post">
+    <label>Имя:</label>
+    <input type="text" th:field="*{name}" required/>
+    <label>Фамилия:</label>
+    <input type="text" th:field="*{lastName}" required/>
+    <label>Возраст:</label>
+    <input type="number" th:field="*{age}" required/>
+    <button type="submit">Сохранить</button>
+</form>
+<a href="/webapp">Назад к списку</a>
+</body>
+</html>
